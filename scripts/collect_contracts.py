@@ -35,6 +35,10 @@ SOGECAP_URL = ("https://epr.amfinesoft.com/api/v1/download/SOGECAP/product/kid/{
 SOGECAP_IDS = ["00216", "00232", "00604", "00742", "00793", "00820",
                "00823", "01272", "01275", "01469", "01779"]
 
+# CNP : API JSON (dic.cnp.fr) -> versions de contrats -> DIC via amfinesoft.
+CNP_API = "https://dic.cnp.fr/wkd-web/kid-webapi/sponsors/FR"
+CNP_DIC = "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/{}/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe"
+
 DATA = Path(__file__).resolve().parent.parent / "data"
 CORPUS = DATA / "contract_corpus"
 OUT = DATA / "contracts_data.json"
@@ -76,6 +80,41 @@ def _filter(op, net):
         return json.loads(resp).get("data", []), f"{len(resp)}o"
     except Exception as e:  # noqa: BLE001
         return [], f"filter KO: {e}"
+
+
+def _get_json(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0",
+                                               "Accept": "application/json"})
+    return json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))
+
+
+def _cnp_contracts():
+    """CNP : parcourt l'API distributeurs -> produits -> versions -> DIC amfinesoft."""
+    def flat(sp):
+        out = []
+        for s in sp:
+            out.append(s["id"])
+            out += flat(s.get("children", []))
+        return out
+    out, seen = [], set()
+    try:
+        sponsors = flat(_get_json(CNP_API))
+    except Exception as e:  # noqa: BLE001
+        print(f"[CNP] API sponsors KO: {e}")
+        return out
+    for sid in sponsors:
+        try:
+            prods = _get_json(f"{CNP_API}/{sid}/products")
+        except Exception:  # noqa: BLE001
+            continue
+        for p in prods:
+            v = p.get("version")
+            if v and v not in seen:
+                seen.add(v)
+                out.append({"insurer": "CNP", "name": p.get("name") or p.get("offreProduit"),
+                            "network": p.get("sponsor"), "type": "Contrat",
+                            "dic_url": CNP_DIC.format(v)})
+    return out
 
 
 def _download(url):
@@ -131,6 +170,14 @@ def main():
             contracts.append({"insurer": "Sogecap", "name": None, "network": i,
                               "type": "Contrat", "dic_url": url})
     print(f"[Sogecap] {len(SOGECAP_IDS)} contrats (amfinesoft)")
+
+    # 1e) CNP : via API distributeurs -> produits (nom fourni par l'API)
+    cnp = _cnp_contracts()
+    for c in cnp:
+        if c["dic_url"] not in seen:
+            seen.add(c["dic_url"])
+            contracts.append(c)
+    print(f"[CNP] {len(cnp)} contrats (API)")
 
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
