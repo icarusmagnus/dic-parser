@@ -29,6 +29,12 @@ SURAVENIR_IDS = [58, 59, 60, 63, 64, 68, 71, 82, 93]
 # Generali : DIC de contrats via data2report (codes GEF1… énumérés, stockés en data).
 GENERALI_URL = "https://docs.data2report.lu/documents/GeneraliFR/kideu/{}_fr_FR.pdf"
 
+# Sogecap (Société Générale) : amfinesoft, IDs contrats numériques (listés sur priips.sogecap.com).
+SOGECAP_URL = ("https://epr.amfinesoft.com/api/v1/download/SOGECAP/product/kid/{}"
+               "/lang/fr?key=7pPlB7HoeaCTjsHOsYGA87RfJcmpSQ")
+SOGECAP_IDS = ["00216", "00232", "00604", "00742", "00793", "00820",
+               "00823", "01272", "01275", "01469", "01779"]
+
 DATA = Path(__file__).resolve().parent.parent / "data"
 CORPUS = DATA / "contract_corpus"
 OUT = DATA / "contracts_data.json"
@@ -116,6 +122,15 @@ def main():
             contracts.append({"insurer": "Generali", "name": None, "network": code,
                               "type": "Contrat", "dic_url": url})
     print(f"[Generali] {len(gen_codes)} contrats (codes data2report)")
+
+    # 1d) Sogecap (SG) : DIC de contrats via amfinesoft (IDs numériques)
+    for i in SOGECAP_IDS:
+        url = SOGECAP_URL.format(i)
+        if url not in seen:
+            seen.add(url)
+            contracts.append({"insurer": "Sogecap", "name": None, "network": i,
+                              "type": "Contrat", "dic_url": url})
+    print(f"[Sogecap] {len(SOGECAP_IDS)} contrats (amfinesoft)")
 
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
