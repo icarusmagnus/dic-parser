@@ -1,0 +1,13 @@
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-AZCAPFID_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-CONTINUITE_20230101.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-OBSEQUES_20230101.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-AZVIEFID_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-GENERATION_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-AZWEALTH_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-AZWEALTHCAPI_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_ASAC-EPARGNE-FID_20240412.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_ASAC-ER2P_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_GAIPARE-FIDELISSIMO_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_GAIPARE-FIDELICAPI_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_GAIPARE-VIEGEN_20251212.pdf
+https://priips.allianz.fr/kd-priips/rest/pdf/KID_AZFR-LINDEPENDANCE2_20230101.pdf

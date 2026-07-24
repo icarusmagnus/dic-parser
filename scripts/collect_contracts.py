@@ -193,6 +193,16 @@ def main():
                               "type": "Contrat", "dic_url": url})
     print(f"[AXA] {len(AXA_IDS)} contrats (amfinesoft)")
 
+    # 1g) Allianz : URLs directes (priips.allianz.fr, listées en data)
+    az_file = DATA / "allianz_contract_urls.txt"
+    az_urls = az_file.read_text().split() if az_file.exists() else []
+    for url in az_urls:
+        if url not in seen:
+            seen.add(url)
+            contracts.append({"insurer": "Allianz", "name": None, "network": "priips.allianz.fr",
+                              "type": "Contrat", "dic_url": url})
+    print(f"[Allianz] {len(az_urls)} contrats (portail maison)")
+
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
     for idx, c in enumerate(contracts):
