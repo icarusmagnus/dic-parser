@@ -39,6 +39,11 @@ SOGECAP_IDS = ["00216", "00232", "00604", "00742", "00793", "00820",
 CNP_API = "https://dic.cnp.fr/wkd-web/kid-webapi/sponsors/FR"
 CNP_DIC = "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/{}/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe"
 
+# AXA : amfinesoft, IDs numériques (menu déroulant axa.fr/PRIIPs, sans clé).
+AXA_URL = "https://epr.amfinesoft.com/api/v1/download/AXA/product/kid/{}/lang/fr"
+AXA_IDS = ["91734", "93884", "80774-80074", "93804", "94054",
+           "91424", "95564", "91974", "91954"]
+
 DATA = Path(__file__).resolve().parent.parent / "data"
 CORPUS = DATA / "contract_corpus"
 OUT = DATA / "contracts_data.json"
@@ -178,6 +183,15 @@ def main():
             seen.add(c["dic_url"])
             contracts.append(c)
     print(f"[CNP] {len(cnp)} contrats (API)")
+
+    # 1f) AXA : amfinesoft, IDs numériques (menu déroulant)
+    for i in AXA_IDS:
+        url = AXA_URL.format(i)
+        if url not in seen:
+            seen.add(url)
+            contracts.append({"insurer": "AXA", "name": None, "network": i,
+                              "type": "Contrat", "dic_url": url})
+    print(f"[AXA] {len(AXA_IDS)} contrats (amfinesoft)")
 
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
