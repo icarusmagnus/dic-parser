@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+samples/*.pdf
+kids.json
+data/dic_corpus/
+docs/dic/

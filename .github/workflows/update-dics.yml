@@ -1,0 +1,74 @@
+name: Mise à jour DIC & dashboard
+
+# Auto-update : chaque lundi 06:00 UTC, + déclenchable à la main (bouton "Run workflow")
+on:
+  schedule:
+    - cron: "0 6 * * *"   # tous les jours 06:00 UTC (accumulation progressive + fraîcheur)
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit des données rafraîchies
+  pages: write      # publication GitHub Pages
+  id-token: write
+
+concurrency:
+  group: update-dics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dépendances
+        run: pip install -r requirements.txt
+
+      # Cache du corpus DIC entre les runs -> incrémental (ne re-télécharge pas l'existant)
+      - name: Cache corpus
+        uses: actions/cache@v4
+        with:
+          path: data/dic_corpus
+          key: dic-corpus-${{ hashFiles('data/top_funds.csv') }}
+          restore-keys: dic-corpus-
+
+      - name: Pipeline (récupération DIC + ingestion EPT -> JSON)
+        run: python scripts/pipeline.py
+        env:
+          DIC_NETWORK: "1"
+
+      - name: Génère le dashboard
+        run: python scripts/build_dashboard.py
+
+      - name: Commit des données rafraîchies
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/dic_data.json docs/index.html || true
+          git commit -m "chore: maj automatique DIC ($(date -u +%Y-%m-%d))" || echo "rien à committer"
+          git push || echo "push ignoré"
+
+      - name: Prépare Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    # Pages nécessite un dépôt public (ou plan Pro). Tant que le dépôt est privé,
+    # cette étape échoue sans bloquer la mise à jour des données ci-dessus.
+    continue-on-error: true
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
