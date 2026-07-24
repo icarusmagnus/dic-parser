@@ -6,8 +6,11 @@ Colonnes datatable : name, status, closingDateLabel, closingDateSort, link(=DIC)
 
 Sortie : data/contracts.json (nom, réseau, type, dic_url). À lancer en CI (réseau stable).
 """
+import csv
+import glob
 import http.cookiejar
 import json
+import os
 import sys
 import urllib.parse
 import urllib.request
@@ -47,6 +50,43 @@ AXA_IDS = ["91734", "93884", "80774-80074", "93804", "94054",
 DATA = Path(__file__).resolve().parent.parent / "data"
 CORPUS = DATA / "contract_corpus"
 OUT = DATA / "contracts_data.json"
+
+# --- Connecteur AMfine (amfinesoft) : drop-in pour licence commerciale ---
+# amfinesoft sert 50+ assureurs. Avec une licence, on obtient le catalogue complet
+# (tous les assureurs, contrats ET fonds). Ici on ingère ce catalogue sans code :
+# déposer un/des CSV dans data/amfine_inbox/ avec colonnes  client,type,id,name[,key]
+#   - client : code assureur amfinesoft (CARDIF, SOGECAP, AXA, GENERALI…)
+#   - type   : "product" (contrat) ou "underlying" (fonds)
+#   - id     : identifiant produit (ou ISIN pour les fonds)
+#   - name   : libellé (optionnel, sinon récupéré du PDF)
+#   - key    : clé d'accès (optionnel ; sinon variable d'env AMFINE_KEY ; sinon aucune)
+AMFINE_INBOX = DATA / "amfine_inbox"
+AMFINE_DL = "https://epr.amfinesoft.com/api/v1/download/{client}/{type}/kid/{id}/lang/fr"
+AMFINE_KEY_ENV = os.environ.get("AMFINE_KEY", "")
+
+
+def _amfine_inbox():
+    """Ingère le catalogue AMfine déposé dans data/amfine_inbox/*.csv."""
+    out = []
+    for f in glob.glob(str(AMFINE_INBOX / "*.csv")):
+        try:
+            with open(f, encoding="utf-8-sig", newline="") as fh:
+                for r in csv.DictReader(fh):
+                    client = (r.get("client") or "").strip()
+                    pid = (r.get("id") or "").strip()
+                    if not client or not pid:
+                        continue
+                    typ = (r.get("type") or "product").strip()
+                    key = (r.get("key") or AMFINE_KEY_ENV).strip()
+                    url = AMFINE_DL.format(client=client, type=typ, id=pid)
+                    if key:
+                        url += f"?key={key}"
+                    out.append({"insurer": client, "name": r.get("name") or None,
+                                "network": "amfine-licence", "type": "Contrat" if typ == "product" else "Fonds",
+                                "dic_url": url})
+        except Exception as e:  # noqa: BLE001
+            print(f"[AMfine] {Path(f).name}: {e}")
+    return out
 
 
 def _opener():
@@ -202,6 +242,16 @@ def main():
             contracts.append({"insurer": "Allianz", "name": None, "network": "priips.allianz.fr",
                               "type": "Contrat", "dic_url": url})
     print(f"[Allianz] {len(az_urls)} contrats (portail maison)")
+
+    # 1h) AMfine (licence) : ingère le catalogue déposé dans data/amfine_inbox/ ->
+    #     couvre TOUS les assureurs d'un coup (vide tant qu'aucune licence branchée)
+    amf = _amfine_inbox()
+    for c in amf:
+        if c["dic_url"] not in seen:
+            seen.add(c["dic_url"])
+            contracts.append(c)
+    if amf:
+        print(f"[AMfine] {len(amf)} entrées ingérées (licence)")
 
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
