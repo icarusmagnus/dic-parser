@@ -21,6 +21,11 @@ HOST = "https://document-information-cle.cardif.fr"
 P = "com_bpc_pcf_priips_views_PriipsContractsPortlet"
 COLS = ["name", "status", "closingDateLabel", "closingDateSort", "link", "copy", "support"]
 NETWORKS = ["partenaires", "cgpi", "retail", "aep", "sg"]
+
+# Suravenir : DIC de contrats à URL numérique énumérable (IDs découverts par balayage).
+SURAVENIR_URL = "https://espaceclient.suravenir.fr/o/documents/WsPUS/DIC_CONTRAT/DIC-{}.pdf"
+SURAVENIR_IDS = [58, 59, 60, 63, 64, 68, 71, 82, 93]
+
 DATA = Path(__file__).resolve().parent.parent / "data"
 CORPUS = DATA / "contract_corpus"
 OUT = DATA / "contracts_data.json"
@@ -75,7 +80,7 @@ def _download(url):
 
 
 def main():
-    # 1) liste des contrats + URL de leur DIC
+    # 1a) Cardif : liste des contrats + URL de leur DIC (portail Liferay)
     contracts, seen = [], set()
     for net in NETWORKS:
         rows, info = _filter(_opener(), net)
@@ -84,27 +89,36 @@ def main():
             link = r.get("link")
             if link and link not in ("null", "") and link not in seen:
                 seen.add(link)
-                contracts.append({"name": r.get("name"), "network": net,
+                contracts.append({"insurer": "Cardif", "name": r.get("name"), "network": net,
                                   "type": r.get("legalNatureLabel"), "dic_url": link})
                 n += 1
-        print(f"[{net}] {info} -> {len(rows)} lignes, {n} contrats nouveaux")
+        print(f"[Cardif/{net}] {info} -> {len(rows)} lignes, {n} contrats")
+
+    # 1b) Suravenir : DIC de contrats énumérés (nom récupéré du PDF)
+    for i in SURAVENIR_IDS:
+        url = SURAVENIR_URL.format(i)
+        if url not in seen:
+            seen.add(url)
+            contracts.append({"insurer": "Suravenir", "name": None, "network": f"DIC-{i}",
+                              "type": "Contrat", "dic_url": url})
+    print(f"[Suravenir] {len(SURAVENIR_IDS)} contrats énumérés")
 
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
-    parsed = 0
-    for c in contracts:
+    for idx, c in enumerate(contracts):
         data = _download(c["dic_url"])
         if not data:
             c["retrieved"] = False
             continue
         c["retrieved"] = True
-        pdf = CORPUS / (c["name"][:60].replace("/", "_") + ".pdf")
+        pdf = CORPUS / f"{c['insurer']}_{idx}.pdf"
         pdf.write_bytes(data)
         try:
             k = parse_kid_pdf(pdf)
+            if not c.get("name"):
+                c["name"] = k.product_name or f"{c['insurer']} contrat {c['network']}"
             c.update(sri=k.sri, rhp_years=k.rhp_years, ongoing_costs=k.costs.ongoing_costs,
                      completeness=k.completeness(), product_name=k.product_name)
-            parsed += 1
         except Exception as e:  # noqa: BLE001
             c["warnings"] = str(e)[:60]
 
