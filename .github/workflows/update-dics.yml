@@ -41,6 +41,9 @@ jobs:
         env:
           DIC_NETWORK: "1"
 
+      - name: Collecte DIC des contrats (Cardif)
+        run: python scripts/collect_contracts.py || echo "collecte contrats ignorée"
+
       - name: Génère le dashboard
         run: python scripts/build_dashboard.py
 
@@ -48,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/dic_data.json docs/index.html || true
+          git add data/dic_data.json data/contracts_data.json docs/index.html || true
           git commit -m "chore: maj automatique DIC ($(date -u +%Y-%m-%d))" || echo "rien à committer"
           git push || echo "push ignoré"
 

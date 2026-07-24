@@ -38,9 +38,17 @@ tr:hover td{background:var(--card)}
 .bar>i{display:block;height:100%;background:var(--good)}
 .no{color:var(--bad)}.foot{color:var(--muted);font-size:12px;margin-top:16px}
 a{color:var(--accent)}
+.modes{display:flex;gap:8px;margin-bottom:16px}
+.mode{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--muted);cursor:pointer;font-size:13px}
+.mode.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 </style></head><body><div class="wrap">
 <h1>DIC — Top __CAT__ fonds du marché</h1>
 <div class="sub">Généré le __GEN__ · données PRIIPs extraites automatiquement (SRI, coûts, période de détention)</div>
+<div class="modes">
+<button id="m-funds" class="mode active">Fonds (UC) · __RETR__ DIC</button>
+<button id="m-contracts" class="mode">Contrats d'assurance · __NCONTR__ DIC</button>
+</div>
+<div id="view-funds">
 <div class="stats">
 <div class="stat"><b>__RETR__/__CAT__</b><span>DIC récupérés</span></div>
 <div class="stat"><b>__COMP__%</b><span>complétude moyenne</span></div>
@@ -58,6 +66,14 @@ a{color:var(--accent)}
 <th data-k="ongoing_costs">Frais</th><th data-k="transaction_costs">Transac.</th>
 <th data-k="completeness">Complétude</th><th data-k="source">Source</th><th>DIC</th>
 </tr></thead><tbody></tbody></table></div>
+</div>
+<div id="view-contracts" hidden>
+<input id="qc" placeholder="Filtrer un contrat : nom, réseau, type…">
+<div class="tablewrap"><table id="tc"><thead><tr>
+<th>Contrat</th><th>Réseau</th><th>Type</th><th>SRI</th><th>Détention</th><th>Frais</th><th>Complétude</th><th>DIC</th>
+</tr></thead><tbody></tbody></table></div>
+<div class="sub" style="margin-top:10px">DIC des enveloppes d'assurance-vie / capitalisation / PER (distinct des DIC de fonds ci-dessus). Source : portail Cardif.</div>
+</div>
 <div class="foot">Source données : catalogue par encours + parsing DIC/EPT. Les fonds sans DIC récupérable
 (iShares, JPMorgan, PIMCO…) nécessitent un accès fundinfo ou un dépôt d'EPT. ·
 <a href="https://github.com/icarusmagnus/dic-parser">Code source</a></div>
@@ -96,13 +112,36 @@ document.querySelectorAll('th').forEach(th=>th.addEventListener('click',()=>{
   render();
 }));
 render();
+// --- contrats ---
+const CONTRACTS=__CONTRACTS__;
+const tcb=document.querySelector('#tc tbody');
+let crows=(CONTRACTS.contracts||[]).slice();
+function crow(c){
+  const dic=c.dic_url?`<a class="badge" href="${c.dic_url}" target="_blank" rel="noopener">PDF ↗</a>`:'<span class="miss">–</span>';
+  return `<tr><td>${c.name||''}</td><td>${c.network||''}</td><td>${c.type||''}</td>
+    <td>${cell(c.sri)}</td><td>${c.rhp_years!=null?c.rhp_years+' ans':cell(null)}</td>
+    <td>${c.ongoing_costs!=null?c.ongoing_costs+'%':cell(null)}</td>
+    <td>${bar(c.retrieved?c.completeness:null)}</td><td>${dic}</td></tr>`;
+}
+function crender(){tcb.innerHTML=crows.map(crow).join('')}
+document.querySelector('#qc').addEventListener('input',e=>{const q=e.target.value.toLowerCase();
+  crows=(CONTRACTS.contracts||[]).filter(c=>[c.name,c.network,c.type].join(' ').toLowerCase().includes(q));crender();});
+crender();
+const vf=document.getElementById('view-funds'),vc=document.getElementById('view-contracts');
+const mf=document.getElementById('m-funds'),mc=document.getElementById('m-contracts');
+mf.addEventListener('click',()=>{vf.hidden=false;vc.hidden=true;mf.classList.add('active');mc.classList.remove('active');});
+mc.addEventListener('click',()=>{vf.hidden=true;vc.hidden=false;mc.classList.add('active');mf.classList.remove('active');});
 </script></body></html>"""
 
 
 def main():
     data = json.loads(DATA.read_text())
+    contracts_file = DATA.parent / "contracts_data.json"
+    contracts = json.loads(contracts_file.read_text()) if contracts_file.exists() else {"contracts": [], "count": 0}
     html = (TEMPLATE
             .replace("__DATA__", json.dumps(data, ensure_ascii=False))
+            .replace("__CONTRACTS__", json.dumps(contracts, ensure_ascii=False))
+            .replace("__NCONTR__", str(contracts.get("count", 0)))
             .replace("__GEN__", data.get("generated_at", "—"))
             .replace("__RETR__", str(data.get("retrieved", 0)))
             .replace("__CAT__", str(data.get("catalog_size", 0)))
