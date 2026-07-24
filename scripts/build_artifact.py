@@ -79,7 +79,11 @@ BODY = """<style>
 </div>
 <div class="srcbar" id="srcbar"></div>
 <div class="legend" id="legend"></div>
-<input id="q" placeholder="Filtrer : nom du fonds, ISIN, société, source…" aria-label="Filtrer">
+<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px">
+<input id="q" placeholder="Filtrer : nom du fonds, ISIN, société, source…" aria-label="Filtrer" style="flex:1;min-width:220px;margin-bottom:0">
+<label style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;cursor:pointer;font-size:13px;color:var(--muted)">
+<input type="checkbox" id="onlydic" style="width:auto"> Uniquement avec DIC</label>
+</div>
 <div class="tw"><table><thead><tr>
 <th data-k="rank">#</th><th data-k="company_group">Société</th><th data-k="name">Fonds</th>
 <th data-k="isin">ISIN</th><th data-k="type">Type</th><th data-k="sri">SRI</th>
@@ -124,8 +128,13 @@ for(const [s,n] of Object.entries(DATA.sources||{})){
 }
 lgh+=`<span><b style="background:var(--track)"></b>non récupéré · ${DATA.catalog_size-DATA.retrieved}</span>`;
 sb.innerHTML=sbh;lg.innerHTML=lgh;
-document.getElementById('q').addEventListener('input',e=>{const q=e.target.value.toLowerCase();
-  rows=DATA.funds.filter(f=>[f.name,f.isin,f.company_group,f.source,f.type].join(' ').toLowerCase().includes(q));render();});
+function applyFilters(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const onlydic=document.getElementById('onlydic').checked;
+  rows=DATA.funds.filter(f=>(!onlydic||f.retrieved)&&[f.name,f.isin,f.company_group,f.source,f.type].join(' ').toLowerCase().includes(q));render();
+}
+document.getElementById('q').addEventListener('input',applyFilters);
+document.getElementById('onlydic').addEventListener('change',applyFilters);
 let asc={};
 document.querySelectorAll('.dic th').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k;asc[k]=!asc[k];
   rows.sort((a,b)=>{let x=a[k],y=b[k];if(x==null)x=asc[k]?1e9:-1e9;if(y==null)y=asc[k]?1e9:-1e9;

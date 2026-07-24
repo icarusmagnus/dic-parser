@@ -47,7 +47,11 @@ a{color:var(--accent)}
 <div class="stat"><b>__COS__</b><span>maisons couvertes</span></div>
 <div class="stat"><b>__SRC__</b><span>sources actives</span></div>
 </div>
-<input id="q" placeholder="Filtrer : nom, ISIN, société, source…">
+<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+<input id="q" placeholder="Filtrer : nom, ISIN, société, source…" style="flex:1;min-width:220px">
+<label style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;cursor:pointer;font-size:14px;color:var(--muted)">
+<input type="checkbox" id="onlydic" style="width:auto;margin:0"> Uniquement avec DIC</label>
+</div>
 <div class="tablewrap"><table id="t"><thead><tr>
 <th data-k="rank">#</th><th data-k="company_group">Société</th><th data-k="name">Fonds</th>
 <th data-k="isin">ISIN</th><th data-k="type">Type</th><th data-k="sri">SRI</th>
@@ -76,11 +80,14 @@ function row(f){
 }
 let rows=DATA.funds.slice();
 function render(){tb.innerHTML=rows.map(row).join('')}
-document.querySelector('#q').addEventListener('input',e=>{
-  const q=e.target.value.toLowerCase();
-  rows=DATA.funds.filter(f=>[f.name,f.isin,f.company_group,f.source,f.type].join(' ').toLowerCase().includes(q));
+function applyFilters(){
+  const q=document.querySelector('#q').value.toLowerCase();
+  const onlydic=document.querySelector('#onlydic').checked;
+  rows=DATA.funds.filter(f=>(!onlydic||f.retrieved)&&[f.name,f.isin,f.company_group,f.source,f.type].join(' ').toLowerCase().includes(q));
   render();
-});
+}
+document.querySelector('#q').addEventListener('input',applyFilters);
+document.querySelector('#onlydic').addEventListener('change',applyFilters);
 let asc={};
 document.querySelectorAll('th').forEach(th=>th.addEventListener('click',()=>{
   const k=th.dataset.k;asc[k]=!asc[k];

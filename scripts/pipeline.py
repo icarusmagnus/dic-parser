@@ -11,6 +11,7 @@ Conçu pour tourner aussi en CI (GitHub Actions) sans intervention.
 """
 import csv
 import glob
+import hashlib
 import json
 import os
 import sys
@@ -54,19 +55,46 @@ _SOURCE_FILTERS = {}
 if CARDIF_ISINS.exists():
     _SOURCE_FILTERS["cardif"] = set(CARDIF_ISINS.read_text().split())
 
+# Résultats du run précédent : permet de NE re-parser que les DIC nouveaux ou modifiés
+# (le parsing pdfplumber est le coût dominant ; on le saute si le PDF est identique).
+_PREV = {}
+if OUT_JSON.exists():
+    try:
+        _PREV = {f["isin"]: f for f in json.loads(OUT_JSON.read_text()).get("funds", [])}
+    except Exception:  # noqa: BLE001
+        _PREV = {}
+
+_REUSE_FIELDS = ("sri", "rhp_years", "currency", "ongoing_costs", "entry_costs",
+                 "transaction_costs", "riy_rhp_pct", "total_cost_rhp_eur",
+                 "scenarios", "completeness", "warnings", "doc_date")
+
 
 def _from_dic(row):
     isin = row["isin"]
     path = fetch_kid(isin, dest_dir=CORPUS, network=NETWORK, source_filters=_SOURCE_FILTERS)
-    rec = dict(row, source="", origin="", retrieved=False, dic_url="")
+    rec = dict(row, source="", origin="", retrieved=False, dic_url="", pdf_sig="")
     if not path:
         return rec
     rec["source"] = path.name.split("_")[0]
-    rec["origin"] = "dic_pdf"
     rec["retrieved"] = True
-    # On ne réhéberge PAS le PDF (des milliers de PDF alourdiraient le dépôt) :
-    # on lie vers l'URL source d'origine, reconstruite depuis (source, ISIN).
+    # On ne réhéberge PAS le PDF : on lie vers l'URL source (dépôt léger).
     rec["dic_url"] = source_url(rec["source"], isin)
+    try:
+        rec["pdf_sig"] = hashlib.md5(path.read_bytes()).hexdigest()[:16]
+    except Exception:  # noqa: BLE001
+        rec["pdf_sig"] = ""
+
+    prev = _PREV.get(isin)
+    # PDF inchangé depuis le dernier run -> on réutilise le parsing (pas de pdfplumber)
+    if (prev and rec["pdf_sig"] and prev.get("pdf_sig") == rec["pdf_sig"]
+            and prev.get("completeness") is not None):
+        for k in _REUSE_FIELDS:
+            if k in prev:
+                rec[k] = prev[k]
+        rec["origin"] = "dic_pdf_cache"
+        return rec
+
+    rec["origin"] = "dic_pdf"
     try:
         rec.update(_kid_fields(parse_kid_pdf(path)))
     except Exception as e:  # noqa: BLE001
