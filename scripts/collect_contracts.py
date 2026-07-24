@@ -26,6 +26,9 @@ NETWORKS = ["partenaires", "cgpi", "retail", "aep", "sg"]
 SURAVENIR_URL = "https://espaceclient.suravenir.fr/o/documents/WsPUS/DIC_CONTRAT/DIC-{}.pdf"
 SURAVENIR_IDS = [58, 59, 60, 63, 64, 68, 71, 82, 93]
 
+# Generali : DIC de contrats via data2report (codes GEF1… énumérés, stockés en data).
+GENERALI_URL = "https://docs.data2report.lu/documents/GeneraliFR/kideu/{}_fr_FR.pdf"
+
 DATA = Path(__file__).resolve().parent.parent / "data"
 CORPUS = DATA / "contract_corpus"
 OUT = DATA / "contracts_data.json"
@@ -102,6 +105,17 @@ def main():
             contracts.append({"insurer": "Suravenir", "name": None, "network": f"DIC-{i}",
                               "type": "Contrat", "dic_url": url})
     print(f"[Suravenir] {len(SURAVENIR_IDS)} contrats énumérés")
+
+    # 1c) Generali : DIC de contrats via data2report (codes GEF1 stockés en data)
+    codes_file = DATA / "generali_contract_codes.txt"
+    gen_codes = codes_file.read_text().split() if codes_file.exists() else []
+    for code in gen_codes:
+        url = GENERALI_URL.format(code)
+        if url not in seen:
+            seen.add(url)
+            contracts.append({"insurer": "Generali", "name": None, "network": code,
+                              "type": "Contrat", "dic_url": url})
+    print(f"[Generali] {len(gen_codes)} contrats (codes data2report)")
 
     # 2) télécharge + parse chaque DIC de contrat
     CORPUS.mkdir(parents=True, exist_ok=True)
