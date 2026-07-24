@@ -16,7 +16,7 @@ OUT = ROOT / "docs" / "index.html"
 TEMPLATE = """<!doctype html>
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DIC — Top 100 fonds</title>
+<title>DIC — __RETR__ fonds avec DIC</title>
 <style>
 :root{--bg:#fff;--fg:#111;--muted:#666;--line:#e5e5e5;--card:#f7f7f8;--accent:#2b6cb0;--good:#1a7f37;--warn:#b7791f;--bad:#c53030}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--line:#30363d;--card:#161b22;--accent:#58a6ff;--good:#3fb950;--warn:#d29922;--bad:#f85149}}
