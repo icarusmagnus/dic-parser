@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31 08:43 UTC",
+  "generated_at": "2026-08-01 08:18 UTC",
   "catalog_size": 8508,
   "retrieved": 5861,
   "avg_completeness": 72.4,
@@ -177690,7 +177690,7 @@
       "type": "opcvm",
       "aum_eur_millions": "0",
       "source": "cardif",
-      "origin": "dic_pdf",
+      "origin": "dic_pdf_cache",
       "retrieved": true,
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/LU3243907741/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
       "pdf_sig": "39b8053102a8646c",
