@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04 08:31 UTC",
+  "generated_at": "2026-08-05 08:30 UTC",
   "catalog_size": 8508,
   "retrieved": 5862,
   "avg_completeness": 72.4,
@@ -52872,7 +52872,7 @@
       "type": "opcvm",
       "aum_eur_millions": "1803",
       "source": "amundi",
-      "origin": "dic_pdf",
+      "origin": "dic_pdf_cache",
       "retrieved": true,
       "dic_url": "https://www.amundi.fr/fr_instit/dl/doc/kid-priips/FR0010111146/FRA/FRA",
       "pdf_sig": "43a2639be66df1e4",
