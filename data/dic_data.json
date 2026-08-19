@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-16 06:30 UTC",
+  "generated_at": "2026-08-19 06:42 UTC",
   "catalog_size": 8508,
-  "retrieved": 5870,
+  "retrieved": 5871,
   "avg_completeness": 72.4,
   "sources": {
-    "cardif": 5060,
+    "cardif": 5061,
     "vanguard": 83,
     "amundi": 552,
     "predica": 175
@@ -113760,11 +113760,23 @@
       "name": "Trusteam Optimum R",
       "type": "opcvm",
       "aum_eur_millions": "96",
-      "source": "",
-      "origin": "",
-      "retrieved": false,
-      "dic_url": "",
-      "pdf_sig": ""
+      "source": "cardif",
+      "origin": "dic_pdf",
+      "retrieved": true,
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/FR0007072160/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
+      "pdf_sig": "a03b7a334fbbf820",
+      "sri": 2,
+      "rhp_years": 2.0,
+      "currency": "EUR",
+      "ongoing_costs": 1.4,
+      "entry_costs": 2.0,
+      "transaction_costs": null,
+      "riy_rhp_pct": 2.7,
+      "total_cost_rhp_eur": 535.0,
+      "scenarios": 3,
+      "completeness": 87.5,
+      "warnings": [],
+      "doc_date": "2026-04-16"
     },
     {
       "rank": "5236",
