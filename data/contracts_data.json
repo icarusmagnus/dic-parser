@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-22 06:39 UTC",
+  "generated_at": "2026-08-23 06:44 UTC",
   "count": 0,
-  "total": 478,
+  "total": 622,
   "contracts": [
     {
       "insurer": "Cardif",
@@ -3649,6 +3649,1158 @@
       "network": "01779",
       "type": "Contrat",
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/SOGECAP/product/kid/01779/lang/fr?key=7pPlB7HoeaCTjsHOsYGA87RfJcmpSQ",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERSPECTIVES ECUREUIL (02/04/1985 AU 31/12/1991)",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/804-BPCE-BASE-19850402-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERSPECTIVES ECUREUIL (01/01/1988 AU 31/12/1989)",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/917-BPCE-BASE-19880101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "COMPTE SICAV PREVOYANCE ECUREUIL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/919-BPCE-BASE-19880101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "BON INVESTISSEMENT PER CE PARIS BON INVESTISSEMENT ECUREUIL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/920-BPCE-BASE-19880101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERSPECTIVES ECUREUIL RETRAITE CE PARIS",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/921-BPCE-BASE-19880101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CAPÉCUREUIL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/402-BPCE-BASE-19881101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURÉCUREUIL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/403-BPCE-BASE-19881101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP ECUREUIL PRÉVOYANCE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/925-BPCE-BASE-19900223-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP ECUREUIL RETRAITE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/926-BPCE-BASE-19900516-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ECUREUIL PROJET",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/940-BPCE-BASE-19910916-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ECUREUIL PERFORMANCE GARANTIE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/942-BPCE-BASE-19930301-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ECUREUIL REVENUS GARANTIS",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/941-BPCE-BASE-19930313-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "POINTS RETRAITE ECUREUIL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/949-BPCE-BASE-19940501-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "GARANTIE RETRAITE ECUREUIL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/943-BPCE-BASE-19940503-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "POINTS RETRAITE PROFESSIONNEL",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/951-BPCE-BASE-19941015-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/852-BPCE-BASE-19941101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "INITIATIVES TRANSMISSION",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/405-BPCE-BASE-19950515-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "INITIATIVES PLUS",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/408-BPCE-BASE-19950615-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES 2",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/856-BPCE-BASE-19971020-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP TRANSMISSION",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/916-BPCE-BASE-19980101-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TENDANCES",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/335-BPCE-BASE-19980518-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "GARANTIE RETRAITE ECUREUIL EURO",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/883-BPCE-BASE-19991001-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSISTANT OBSÈQUES",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/954-BPCE-BASE-20010521-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES GRENADINE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/872-BPCE-BASE-20021125-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERP CE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/320-BPCE-BASE-20040315-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "RICOCHET",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/135-BPCE-BASE-20050502-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "YOGA",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/180-BPCE-BASE-20070930-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "LIVRET ASSURANCE VIE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/419-BPCE-BASE-20080301-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PALATINE DIMENSIONS",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/138-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PATRIMONIO CRESCENTE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/329-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES CAPI",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/406-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "AIKIDO",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/418-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "OCEOR EVOLUTION",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/502-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES PRIVILEGE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/718-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERP ASSYLIO",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/766-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES 3D",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/858-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "NUANCES PLUS",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/859-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "OCEOR HARMONIE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/895-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "OCÉOR VITALITÉ",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/896-BPCE-BASE-20170913-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PER CE",
+      "network": "BPCE",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/241-BPCE-PER1-20201001-BPCE/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURDIX",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/365-LBP-BASE-19801001-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURIMMO 2",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/673-LBP-BASE-19820701-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURFONDS",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/160-LBP-BASE-19830414-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PLEIN TEMPS",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/802-PSS-BASE-19850302-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "BON D INVESTISSEMENTS PER",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/910-LBP-BASE-19880101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP POSTE PLENAVENIR",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/914-LBP-BASE-19880101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PER",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/915-LBP-BASE-19880101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CAPIPOSTE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/400-LBP-BASE-19881101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP POSTE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/922-LBP-BASE-19900309-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP POSTE PRIME UNQIUE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/927-LBP-BASE-19901101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "POSTE AVENIR",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/343-LBP-BASE-19920914-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURDIX 2",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/905-LBP-BASE-19921120-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EXCELIUS 1",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/907-LBP-BASE-19940411-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EXCELIUS 2",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/908-LBP-BASE-19940926-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "VALORYS",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/909-LBP-BASE-19950111-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EXCELIUS 3",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/911-LBP-BASE-19950601-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SELEXIO",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/161-LBP-BASE-19950918-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EXCELIUS 4",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/486-LBP-BASE-19951015-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CAPIPOSTE 2",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/412-LBP-BASE-19951118-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "COMPLEA",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/339-LBP-BASE-19961001-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CAPIPOSTE 3",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/398-LBP-BASE-20010820-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "QUIETUDE AUTONOMIE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/609-LBP-BASE-20020204-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SOLESIO PERP HORIZON",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/384-LBP-BASE-20040503-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "GMO",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/965-LBP-TPEP-20060101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASCENDO",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/445-LBP-TPEP-20090101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EXCELIS VIE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/ED7-LBP-BASE-20090914-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EXCELIS CAPITALISATION",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/ED8-LBP-BASE-20090914-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "VIVACCIO",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/625-LBP-BASE-20101107-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/079-LBP-BASE-20101203-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE (APRÈS 27/07/11)",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/246-LBP-BASE-20110727-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SATINIUM VIE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/EF0-LBP-BASE-20140101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SATINIUM CAPITALISATION",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/EF1-LBP-BASE-20140101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "VIAGERYS",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/778-LBP-BASE-20150602-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERSPECTIVE VIE GENERATION",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A8C-LBP-BASE-20151031-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SOLESIO VIE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/238-LBP-BASE-20160903-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "VIVACCIO (APRÈS 27/07/11)",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/012-LBP-BASE-20160905-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE 2",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/931-LBP-BASE-20170801-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TOSCANE VIE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/298-LBP-BASE-20170927-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERSPECTIVE CAPI",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C3C-LBP-BASE-20171113-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE PER",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C5F-LBP-PER1-20200101-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE 2",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/931-LBP-VRSN-20210520-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE PATRIMOINE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/212-LBP-BASE-20140114-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CACHEMIRE PATRIMOINE",
+      "network": "LBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/212-LBP-VRSN-20210520-LBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "EASYVIE",
+      "network": "EASYBOU",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B5E-LBP-BASE-20170927-EASYBOU/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE CAPI",
+      "network": "CNPPATRIM",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A7A-CMO-BASE-20161108-CNPPATRIM/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE",
+      "network": "CNPPATRIM",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C7B-CMO-BASE-20161201-CNPPATRIM/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE VERTUO CAPI",
+      "network": "CNPPATRIM",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/E1A-CMO-BASE-20220210-CNPPATRIM/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURDIX",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/365-LBP-BASE-19801001-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ASSURIMMO 2",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/673-LBP-BASE-19820701-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PLEIN TEMPS",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/802-PSS-BASE-19850302-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "COMPTA7",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/401-PSS-BASE-19880101-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "BON D INVESTISSEMENTS PER",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/910-LBP-BASE-19880101-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PER",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/915-LBP-BASE-19880101-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PLEIN TEMPS PER (MONOSICAV TRESO)",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/918-PSS-BASE-19880101-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEP EVOLUTION",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/923-PSS-BASE-19900226-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PLURIVAL",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/162-PSS-BASE-19911001-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "FLORIVAL",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/390-PSS-BASE-19920302-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR VIE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/345-PSS-BASE-19940116-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "OPTIVIE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/327-PSS-BASE-19950606-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR VIE PROFESSIONNELS",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/355-PSS-BASE-19950715-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "ACTIVAL",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/841-PSS-INIT-19951001-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "VEGA PATRIMOINE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B8B-CMO-BASE-19960101-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR EPARGNE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/163-PSS-BASE-19970224-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR PATRIMOINE CAPI",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/971-PSS-BASE-19970520-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SELEXANCE 1818 / IXIS EXCELLENCE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B6B-CMO-BASE-19970909-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "MULTISUPPORTS CNP",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/563-PSS-BASE-19971201-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR PATRIMOINE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/970-CMO-BASE-19980101-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "OPTIVAL",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/030-PSS-BASE-19990901-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR EPARGNE CAPITALISATION",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/006-PSS-BASE-19991028-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR EPARGNE INDIVIDUEL",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/082-PSS-BASE-19991028-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PEA CAPI",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/358-PSS-BASE-20010924-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR CAPITALISATION",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/394-PSS-BASE-20011112-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "HORIZON RETRAITE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/765-PSS-BASE-20040816-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP TRESOR GENERATIONS",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/986-PSS-BASE-20070604-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR PREVOYANCE ASSURAVIE 3",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/756-PSS-BASE-20070901-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "TRESOR PREVOYANCE GARANTIE OBSEQUES 2",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/759-PSS-BASE-20070901-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP TRESOR AUTONOMIE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/988-PSS-BASE-20080626-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP TRESOR PERFORMANCE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/626-LBP-BASE-20100605-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE CAPI",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A7A-CMO-BASE-20150408-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CERTIVAL",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/782-LBP-BASE-20150610-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE CAPI",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A7A-CMO-BASE-20161108-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SELECTION CINTO CAPI",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A9A-CMO-BASE-20161114-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C7B-CMO-BASE-20161201-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP TRESOR PROJETS",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/755-LBP-BASE-20170901-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "BPE EMERAUDE",
+      "network": "BPELBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B2E-LBP-BASE-20180831-BPELBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PERSPECTIVE EPARGNE RETRAITE",
+      "network": "BPELBP",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C9D-LBP-PER1-20220301-BPELBP/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PREFON RETRAITE",
+      "network": "PREFON",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/602-5953W-PREFON/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PREFON UC",
+      "network": "PREFON",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/805-2523S-PREFON/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PREFON PEP",
+      "network": "PREFON",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/934-4133S-PREFON/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "PREFON EPARGNE",
+      "network": "PREFON",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/935-4134T-PREFON/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "VEGA PATRIMOINE",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B8B-CMO-BASE-19960101-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "SELEXANCE 1818 / IXIS EXCELLENCE",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B6B-CMO-BASE-19970909-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP PATRIMOINE LIBERTE PLUS",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B3B-CMO-BASE-19980115-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP PATRIMOINE CAPI",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B3A-CMO-BASE-20000529-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE (FERMÉ À LA COMMERCIALISATION)",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A7B-CMO-BASE-20150615-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE CAPI",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/A7A-CMO-BASE-20161108-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ONE",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C7B-CMO-BASE-20161201-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ALYSES CAPI",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/F1A-CMO-HRVT-20230215-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ALYSES VIE",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/F1B-CMO-HRVT-20230215-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ALYSÉS CAPI BY ROCKFI",
+      "network": "790130",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/F2A-CMO-BASE-20260120-790130/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP ALYSÉS VIE BY ROCKFI",
+      "network": "790130",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/F2B-CMO-BASE-20260120-790130/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "OFFRE SALARIÉ ESR",
+      "network": "ESR",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C8E-ND-ESR/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "LUCYA CNP",
+      "network": "777001",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/D5B-CMO-BASE-20251201-777001/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "LUCYA CNP CAPI",
+      "network": "777001",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/D5A-CMO-BASE-20260201-777001/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
       "retrieved": false
     },
     {
