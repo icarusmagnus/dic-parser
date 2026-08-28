@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-27 17:23 UTC",
+  "generated_at": "2026-08-28 18:09 UTC",
   "count": 0,
-  "total": 622,
+  "total": 626,
   "contracts": [
     {
       "insurer": "Cardif",
@@ -4597,6 +4597,14 @@
     },
     {
       "insurer": "CNP",
+      "name": "CNP TRESOR PREMIUM VIE",
+      "network": "AMETIS",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/231-PSS-BASE-20130502-AMETIS/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
       "name": "CNP ONE CAPI",
       "network": "AMETIS",
       "type": "Contrat",
@@ -4777,6 +4785,30 @@
       "network": "790130",
       "type": "Contrat",
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/F2B-CMO-BASE-20260120-790130/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP RETRAITE AVENIR",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER1-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP RETRAITE AVENIR",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER2-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "CNP RETRAITE AVENIR",
+      "network": "790000",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER3-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
       "retrieved": false
     },
     {
