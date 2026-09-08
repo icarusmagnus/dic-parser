@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07 11:17 UTC",
+  "generated_at": "2026-09-08 10:37 UTC",
   "count": 0,
-  "total": 626,
+  "total": 625,
   "contracts": [
     {
       "insurer": "Cardif",
@@ -4809,14 +4809,6 @@
       "network": "790000",
       "type": "Contrat",
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER3-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
-      "retrieved": false
-    },
-    {
-      "insurer": "CNP",
-      "name": "OFFRE SALARIÉ ESR",
-      "network": "ESR",
-      "type": "Contrat",
-      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/C8E-ND-ESR/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
       "retrieved": false
     },
     {
