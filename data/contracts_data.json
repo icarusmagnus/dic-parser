@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11 10:34 UTC",
+  "generated_at": "2026-09-12 10:05 UTC",
   "count": 0,
-  "total": 626,
+  "total": 624,
   "contracts": [
     {
       "insurer": "Cardif",
@@ -4793,22 +4793,6 @@
       "network": "790000",
       "type": "Contrat",
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER1-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
-      "retrieved": false
-    },
-    {
-      "insurer": "CNP",
-      "name": "CNP RETRAITE AVENIR",
-      "network": "790000",
-      "type": "Contrat",
-      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER2-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
-      "retrieved": false
-    },
-    {
-      "insurer": "CNP",
-      "name": "CNP RETRAITE AVENIR",
-      "network": "790000",
-      "type": "Contrat",
-      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/B7A-CMO-PER3-20240601-790000/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
       "retrieved": false
     },
     {
