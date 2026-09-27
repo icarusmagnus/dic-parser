@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-26 10:41 UTC",
+  "generated_at": "2026-09-27 11:33 UTC",
   "catalog_size": 8508,
-  "retrieved": 5942,
+  "retrieved": 5941,
   "avg_completeness": 72.7,
   "sources": {
     "cardif": 5131,
     "vanguard": 83,
     "amundi": 552,
-    "predica": 176
+    "predica": 175
   },
   "companies_covered": 295,
   "funds": [
@@ -60385,23 +60385,11 @@
       "name": "DPAM B EQUITIES WORLD SUSTAINABLE _ B",
       "type": "opcvm",
       "aum_eur_millions": "1514",
-      "source": "predica",
-      "origin": "dic_pdf_cache",
-      "retrieved": true,
-      "dic_url": "https://priips.predica.com/credit-agricole/DIS_BE0058652646.pdf",
-      "pdf_sig": "3ad27ca61e04f26f",
-      "sri": 4,
-      "rhp_years": 6.0,
-      "currency": "EUR",
-      "ongoing_costs": 1.74,
-      "entry_costs": null,
-      "transaction_costs": 0.44,
-      "riy_rhp_pct": 2.5,
-      "total_cost_rhp_eur": 2014.0,
-      "scenarios": 3,
-      "completeness": 87.5,
-      "warnings": [],
-      "doc_date": "2026-09-07"
+      "source": "",
+      "origin": "",
+      "retrieved": false,
+      "dic_url": "",
+      "pdf_sig": ""
     },
     {
       "rank": "3170",
