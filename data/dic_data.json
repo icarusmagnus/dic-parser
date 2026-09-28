@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-27 11:33 UTC",
+  "generated_at": "2026-09-28 12:30 UTC",
   "catalog_size": 8508,
   "retrieved": 5941,
   "avg_completeness": 72.7,
   "sources": {
-    "cardif": 5131,
+    "cardif": 5130,
     "vanguard": 83,
     "amundi": 552,
-    "predica": 175
+    "predica": 176
   },
   "companies_covered": 295,
   "funds": [
@@ -60385,11 +60385,23 @@
       "name": "DPAM B EQUITIES WORLD SUSTAINABLE _ B",
       "type": "opcvm",
       "aum_eur_millions": "1514",
-      "source": "",
-      "origin": "",
-      "retrieved": false,
-      "dic_url": "",
-      "pdf_sig": ""
+      "source": "predica",
+      "origin": "dic_pdf",
+      "retrieved": true,
+      "dic_url": "https://priips.predica.com/credit-agricole/DIS_BE0058652646.pdf",
+      "pdf_sig": "3ad27ca61e04f26f",
+      "sri": 4,
+      "rhp_years": 6.0,
+      "currency": "EUR",
+      "ongoing_costs": 1.74,
+      "entry_costs": null,
+      "transaction_costs": 0.44,
+      "riy_rhp_pct": 2.5,
+      "total_cost_rhp_eur": 2014.0,
+      "scenarios": 3,
+      "completeness": 87.5,
+      "warnings": [],
+      "doc_date": "2026-09-07"
     },
     {
       "rank": "3170",
@@ -165985,25 +165997,11 @@
       "name": "",
       "type": "opcvm",
       "aum_eur_millions": "0",
-      "source": "cardif",
-      "origin": "dic_pdf_cache",
-      "retrieved": true,
-      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/FRIP00002PJ6/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
-      "pdf_sig": "92e45b31c380a224",
-      "sri": 6,
-      "rhp_years": 3.0,
-      "currency": "EUR",
-      "ongoing_costs": 0.0,
-      "entry_costs": 3.68,
-      "transaction_costs": null,
-      "riy_rhp_pct": 1.55,
-      "total_cost_rhp_eur": 368.0,
-      "scenarios": 0,
-      "completeness": 75.0,
-      "warnings": [
-        "Scénarios non détectés"
-      ],
-      "doc_date": null
+      "source": "",
+      "origin": "",
+      "retrieved": false,
+      "dic_url": "",
+      "pdf_sig": ""
     },
     {
       "rank": "7250",
