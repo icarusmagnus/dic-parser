@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30 11:52 UTC",
+  "generated_at": "2026-10-01 12:21 UTC",
   "count": 0,
-  "total": 625,
+  "total": 627,
   "contracts": [
     {
       "insurer": "Cardif",
@@ -281,6 +281,14 @@
       "network": "retail",
       "type": "Assurance vie",
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/product/kid/CN-BNP-PARIBAS-MULTIPLACEMENTS-AVENIR-FORMULE-PLACEMENT/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
+      "retrieved": false
+    },
+    {
+      "insurer": "Cardif",
+      "name": "BNP Paribas OBSEQUES",
+      "network": "retail",
+      "type": "Obsèques",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/product/kid/BNPPO_oct2026/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
       "retrieved": false
     },
     {
@@ -4825,6 +4833,14 @@
       "network": "777001",
       "type": "Contrat",
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/D5A-CMO-BASE-20260201-777001/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
+      "retrieved": false
+    },
+    {
+      "insurer": "CNP",
+      "name": "LUCYA CNP PER",
+      "network": "777001",
+      "type": "Contrat",
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CNP/product/kid/D5C-CMO-PER1-20260901-777001/lang/fr?key=xJdkzl5Bq4GWwvPKrtPRSK4a9QfrXe",
       "retrieved": false
     },
     {
