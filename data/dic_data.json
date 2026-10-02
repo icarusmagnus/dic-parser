@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01 12:15 UTC",
+  "generated_at": "2026-10-02 11:41 UTC",
   "catalog_size": 8508,
-  "retrieved": 5944,
+  "retrieved": 5945,
   "avg_completeness": 72.7,
   "sources": {
-    "cardif": 5133,
+    "cardif": 5134,
     "vanguard": 83,
     "amundi": 552,
     "predica": 176
@@ -140675,11 +140675,23 @@
       "name": "MC MODERE",
       "type": "opcvm",
       "aum_eur_millions": "9",
-      "source": "",
-      "origin": "",
-      "retrieved": false,
-      "dic_url": "",
-      "pdf_sig": ""
+      "source": "cardif",
+      "origin": "dic_pdf",
+      "retrieved": true,
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/FR0013064540/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
+      "pdf_sig": "2d513e3afd60c7bf",
+      "sri": 3,
+      "rhp_years": 5.0,
+      "currency": "EUR",
+      "ongoing_costs": 2.1,
+      "entry_costs": 2.0,
+      "transaction_costs": 0.1,
+      "riy_rhp_pct": 2.6,
+      "total_cost_rhp_eur": 1404.0,
+      "scenarios": 3,
+      "completeness": 100.0,
+      "warnings": [],
+      "doc_date": "2026-03-31"
     },
     {
       "rank": "6245",
