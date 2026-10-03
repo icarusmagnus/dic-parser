@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02 11:41 UTC",
+  "generated_at": "2026-10-03 10:58 UTC",
   "catalog_size": 8508,
   "retrieved": 5945,
   "avg_completeness": 72.7,
@@ -60386,10 +60386,10 @@
       "type": "opcvm",
       "aum_eur_millions": "1514",
       "source": "predica",
-      "origin": "dic_pdf_cache",
+      "origin": "dic_pdf",
       "retrieved": true,
       "dic_url": "https://priips.predica.com/credit-agricole/DIS_BE0058652646.pdf",
-      "pdf_sig": "3ad27ca61e04f26f",
+      "pdf_sig": "f9201cf925eff1ed",
       "sri": 4,
       "rhp_years": 6.0,
       "currency": "EUR",
@@ -60401,7 +60401,7 @@
       "scenarios": 3,
       "completeness": 87.5,
       "warnings": [],
-      "doc_date": "2026-09-07"
+      "doc_date": "2026-10-01"
     },
     {
       "rank": "3170",
@@ -140676,7 +140676,7 @@
       "type": "opcvm",
       "aum_eur_millions": "9",
       "source": "cardif",
-      "origin": "dic_pdf",
+      "origin": "dic_pdf_cache",
       "retrieved": true,
       "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/FR0013064540/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
       "pdf_sig": "2d513e3afd60c7bf",
