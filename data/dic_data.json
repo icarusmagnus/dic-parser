@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-20 10:54 UTC",
+  "generated_at": "2026-10-23 10:52 UTC",
   "catalog_size": 8508,
-  "retrieved": 5974,
+  "retrieved": 5975,
   "avg_completeness": 72.8,
   "sources": {
-    "cardif": 5163,
+    "cardif": 5164,
     "vanguard": 83,
     "amundi": 552,
     "predica": 176
@@ -131669,11 +131669,23 @@
       "name": "Gouvernance et Managers Europe C",
       "type": "opcvm",
       "aum_eur_millions": "25",
-      "source": "",
-      "origin": "",
-      "retrieved": false,
-      "dic_url": "",
-      "pdf_sig": ""
+      "source": "cardif",
+      "origin": "dic_pdf",
+      "retrieved": true,
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/FR001400NMP5/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
+      "pdf_sig": "9f987efeff8ee69d",
+      "sri": 4,
+      "rhp_years": 5.0,
+      "currency": "EUR",
+      "ongoing_costs": 1.7,
+      "entry_costs": 0.0,
+      "transaction_costs": 0.66,
+      "riy_rhp_pct": null,
+      "total_cost_rhp_eur": 1583.0,
+      "scenarios": 3,
+      "completeness": 87.5,
+      "warnings": [],
+      "doc_date": "2026-07-08"
     },
     {
       "rank": "5901",
