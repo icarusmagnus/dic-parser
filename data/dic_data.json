@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-26 12:03 UTC",
+  "generated_at": "2026-10-28 11:58 UTC",
   "catalog_size": 8508,
-  "retrieved": 5975,
+  "retrieved": 5976,
   "avg_completeness": 72.8,
   "sources": {
-    "cardif": 5164,
+    "cardif": 5165,
     "vanguard": 83,
     "amundi": 552,
     "predica": 176
@@ -111715,11 +111715,23 @@
       "name": "SPPI Multi-Oblig",
       "type": "opcvm",
       "aum_eur_millions": "115",
-      "source": "",
-      "origin": "",
-      "retrieved": false,
-      "dic_url": "",
-      "pdf_sig": ""
+      "source": "cardif",
+      "origin": "dic_pdf",
+      "retrieved": true,
+      "dic_url": "https://epr.amfinesoft.com/api/v1/download/CARDIF/underlying/kid/FR0012696102/lang/fr?key=QGMGiLdrUa0v5O2FCGkmIF7yhcMOJO",
+      "pdf_sig": "16eb14e89a4dc6b6",
+      "sri": 3,
+      "rhp_years": 3.0,
+      "currency": "EUR",
+      "ongoing_costs": 1.67,
+      "entry_costs": 0.0,
+      "transaction_costs": 0.26,
+      "riy_rhp_pct": 1.95,
+      "total_cost_rhp_eur": 611.0,
+      "scenarios": 3,
+      "completeness": 100.0,
+      "warnings": [],
+      "doc_date": "2026-04-15"
     },
     {
       "rank": "5157",
